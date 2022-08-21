@@ -10,6 +10,7 @@ public class AreaCalculator {
         int width = input.nextInt();
         int area = length*width;
         System.out.println(" The rectangle's area is " +area );
+        input.close();
 
 
     }

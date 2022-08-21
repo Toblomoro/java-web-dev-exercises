@@ -11,5 +11,6 @@ public class MPG {
         int gallons = input.nextInt();
         int milesPerGallon = miles/gallons;
         System.out.println("You have achived a total MPG of " +milesPerGallon +" MPG today." );
+        input.close();
     }
 }
