@@ -9,10 +9,13 @@ public class Alice {
 
         System.out.println("Can you guess a word in the first sentence of 'Alice in Wonderland'?");
         String searchTerm = input.nextLine();
-        searchTerm = searchTerm.toUpperCase();
-        alicesLine = alicesLine.toUpperCase();
-        boolean answer = alicesLine.contains(searchTerm);
-        System.out.println("It is " +answer +" that 'Alice in Wonderlands' first sentence contains that phrase");
+        String searchTermUpper = searchTerm.toUpperCase();
+        String alicesLineSearch = alicesLine.toUpperCase();
+        boolean answer = alicesLineSearch.contains(searchTermUpper);
+        int location = alicesLineSearch.indexOf(searchTermUpper) + 1 ;
+        String splice= alicesLineSearch.replaceAll(searchTermUpper, "");
+        splice = splice.trim();
+        System.out.println("It is " +answer +" that 'Alice in Wonderlands' first sentence contains " +searchTerm+". It is found at index " + location + ". If we remove the word '"+searchTerm+"' the new sentence will read :  " +splice.toLowerCase());
         input.close();
 
 
