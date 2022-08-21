@@ -8,6 +8,8 @@ public class AreaCalculator {
         int length = input.nextInt();
         System.out.println("What is the width?");
         int width = input.nextInt();
+        int area = length*width;
+        System.out.println(" The rectangle's area is " +area );
 
 
     }
