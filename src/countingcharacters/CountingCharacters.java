@@ -2,13 +2,18 @@ package countingcharacters;
 
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class CountingCharacters {
     public static void main(String args[]) {
-        String str = " When Mr. Bilbo Baggins of Bag End announced that he would shortly be celebrating his eleventy-first birthday with a party of special magnificence, there was much talk and excitement in Hobbiton.";
+        String str ;
         int length;
-        length= str.length();
+
         int counter[] = new int[256];
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        str= scanner.nextLine();
+        length= str.length();
         for (int i = 0; i < length ; i++) {
             counter[(int) str.charAt(i)]++;
         }
