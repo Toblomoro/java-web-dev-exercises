@@ -1,4 +1,4 @@
-package exercises;
+package exercises.chap2;
 
 public class Arraypractice {
     public static void main(String[] args) {

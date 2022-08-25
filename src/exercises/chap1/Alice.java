@@ -1,6 +1,6 @@
 
 
-package exercises;
+package exercises.chap1;
 import java.util.Scanner;
 public class Alice {
     public static void main(String[] args){
