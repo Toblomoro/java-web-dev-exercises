@@ -10,9 +10,11 @@ public class Array_list_practice {
             Arrays.asList(1,2,1,2,1,2,1,2,1,2,1,2)
     );
 
+
     public static void main(String[] args) {
         int total = SumEvenClass.SumEven(list);
         System.out.println("The sum of all even numbers in the list is " + total + ".");
+
 
 
 
