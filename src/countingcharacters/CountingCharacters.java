@@ -15,11 +15,11 @@ public class CountingCharacters {
         str= scanner.nextLine();
         length= str.length();
         for (int i = 0; i < length ; i++) {
-            counter[(int) str.charAt(i)]++;
+            counter[str.charAt(i)]++;
         }
         for (int i = 0; i < 256; i++) {
             if (counter[i] != 0){
-                System.out.println((char)i+ " " +counter[i]);
+                System.out.println((char)i+ ":" +counter[i]);
             }
 
         }
