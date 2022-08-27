@@ -10,4 +10,20 @@ public class Student {
     private int numberOfCredits = 0;
     private double gpa = 0.0;
 
+    public String getName() {
+        return name;
+    }
+    public int getStudentId() {
+        return studentId;
+    }
+    public int getNumberOfCredits() {
+        return numberOfCredits;
+    }
+    public double getGpa () {
+        return gpa;
+    }
+Student ben = new Student();
+
+
+
 }
