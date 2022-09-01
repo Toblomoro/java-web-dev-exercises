@@ -58,12 +58,14 @@ public class Student {
         //Update the appropriate fields: numberOfCredits, gpa
         //if number of credits is 4 then A, 3 then B, 2 then C, 1 then D, 0 then fail.
         //quality score = (letter grade * course credits) finalGPA = (quality score /total credits
-        Double quality = gpa * numberOfCredits;
-        Double newQuality = courseCredits * grade;
-        Double updatedQuality = quality + newQuality;
-        Double updatedCredits = courseCredits + numberOfCredits;
-        Double numberOfCredits= updatedCredits;
-        gpa = quality/numberOfCredits;
+        Double currentQuality = gpa * numberOfCredits;
+        Double newCredits = numberOfCredits + courseCredits;
+        Double newGpa = gpa + grade;
+        Double totalQuality = newGpa * newCredits;
+
+
+        Double gpa = (totalQuality/newCredits);
+
 
       /*  if (gpa >= 3.0) {
             grade = "A";
