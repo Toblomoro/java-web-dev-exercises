@@ -3,6 +3,8 @@ package exercises.technology;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import static java.lang.System.*;
+
 public class Smartphone extends Computer {
 
 
@@ -17,15 +19,18 @@ public class Smartphone extends Computer {
             double weight = 5.89; //oz
             double display = 6.1; //inch
         }*/
-    public static HashMap<String, String> s22Method() {
-        HashMap<String, String> s22 = new HashMap<String, String>();
-        s22.put("Name", "Samsung Galaxy s22");
-        s22.put ("Release Date", "02/25/2022");
-        s22.put ("Storage", "256 mb");
-        s22.put ("CPU", "Octa-core 4x1.80 GHz Cortex-A510");
-        s22.put ("Price", "799.99");
-        s22.put ("Weight", "5.8 oz");
-        s22.put("Display size", " 6.1 inches");
+
+    public static ArrayList<String> s22Method() {
+        ArrayList<String> s22 = new ArrayList<>();
+        s22.add("Name: Samsung Galaxy s22");
+        s22.add ("Release Date: 02/25/2022");
+        s22.add("Storage: 256 gb");
+        s22.add ("CPU: Octa-core 4x1.80 GHz Cortex-A510");
+        s22.add("Price: 799.99");
+        s22.add("Weight: 5.8 oz");
+        s22.add("Display size: 6.1 inches");
+
+
 
 
         return s22;
