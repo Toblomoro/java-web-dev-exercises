@@ -14,9 +14,15 @@ public class Main {
         input = new Scanner(System.in);
         System.out.println("Hello human,Would you like to buy a new portable computing device?\nYes\nNo ");
         String choice = input.next();
-        input.close();
+
+
         //String message = Message.getMessage("fr");
         System.out.println(Computer.getMenuChoice(choice));
+
+        System.out.println("Please Make a selection");
+         choice = input.next();
+
+        System.out.println(Selection.getMenuChoice(choice));
 
 
 }
